@@ -1,0 +1,26 @@
+{
+  "name": "discordbotmd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeinfinitDenis/DiscordBotMD.git"
+  },
+  "author": "Sechelaru Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeinfinitDenis/DiscordBotMD/issues"
+  },
+  "homepage": "https://github.com/DeinfinitDenis/DiscordBotMD#readme",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^14.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  }
+}
