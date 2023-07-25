@@ -18,7 +18,8 @@
   "homepage": "https://github.com/DeinfinitDenis/DiscordBotMD#readme",
   "dependencies": {
     "discord": "^0.8.2",
-    "discord.js": "^14.11.0"
+    "discord.js": "^14.11.0",
+    "mongodb": "^5.7.0"
   },
   "devDependencies": {
     "eslint": "^8.45.0"
