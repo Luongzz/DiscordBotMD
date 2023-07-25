@@ -25,23 +25,13 @@ module.exports = {
     .addIntegerOption(option =>
       option.setName("team2score")
         .setDescription("Team 2 score")
-        .setRequired(true))
-    .addIntegerOption(option =>
-      option.setName("winner")
-        .setDescription("Who is the winner")
-        .setRequired(true)
-        .addChoices(
-          {name: "Team 1", value: 1},
-          {name: "Team 2", value: 2}
-        )),
+        .setRequired(true)),
       
   async execute(interaction) {
     const options = interaction.options;
 
     const team1score = interaction.options.getInteger('team1score');
-    if(team1score > 12) team1score = 12;
     const team2score = interaction.options.getInteger('team2score');
-    if(team2score > 12) team2score = 12;
     try {
       await client.connect();
       console.log('Connected to MongoDB cluster successfully!');
@@ -53,7 +43,6 @@ module.exports = {
         team2: options.getRole("team2").name,
         team1score: team1score,
         team2score: team2score,
-        winner: options.getInteger("winner").value
       };
 
       const result = await dbo.insertOne(newMatch);
