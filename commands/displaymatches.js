@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 const { MongoClient } = require('mongodb');
 
-const uri = "mongodb+srv://definitmoment:KarjL11f4cr8rq0U@mdcluster.vosn3bz.mongodb.net/?retryWrites=true&w=majority";
+const {uri} = require("../config.json");
 
 const testEmbed = new EmbedBuilder()
 	.setColor(0x0099FF)
